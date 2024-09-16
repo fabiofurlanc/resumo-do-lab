@@ -19,5 +19,13 @@ Na Categoria - Rede
 * SLA - existem diversos SLAs disponíveis conforme a redunância necessária, quando maior o SLA menor o tempo indisponível e mais caro o serviço
 
   
+# Aula Tipos de Serviço de Nuvem na Azure
+* IaaS – Infraestrutura como serviço, mais flexível, mais responsabilidades do contratante.
+* PaaS – Plataforma como serviço, focado no desenvolvimento de apps, menos responsabilidades do contratante.
+* SaaS – Software como serviço, pouca flexibilidade, poucas responsabilidades do contratante.
+
+Modelo de responsabilidade compartilhada:
+
+![image](https://github.com/user-attachments/assets/a2b6c1ba-1eb8-485c-9574-9a646fb44405)
 
 
