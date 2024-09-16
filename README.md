@@ -1,5 +1,7 @@
 # resumo-do-lab
-Resumo do lab Microsoft Azure - Localizando Serviços por Categoria
+Resumo do lab Microsoft Azure 
+
+# Aula Localizando Serviços por Categoria
 
 Nessa aula aprendemos:
 * Como mudar idioma do portal do Azure
@@ -12,5 +14,10 @@ Na Categoria - Rede
 * Armazenamento - Migração
 
 * Quando constar como Versão Prévia (não é recomendado usar em base de produção)
+
+# Aula Criando máquinas Virtuais na Azure
+* SLA - existem diversos SLAs disponíveis conforme a redunância necessária, quando maior o SLA menor o tempo indisponível e mais caro o serviço
+
+  
 
 
