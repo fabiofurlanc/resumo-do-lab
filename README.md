@@ -104,3 +104,27 @@ Tipos: Data Box Disk, Data Box e Data Box Heavy.
 * Gerenciador de Armazenamento do Azure – Interface gráfica semelhante ao Windows Explorer, compatível com Windows, MacOS e Linux.
 
 * Sincronização de Arquivos do Azure – Sincroniza arquivos e locais de forma bidirecional, a camada de nuvem mantém acessados com frequência no loca, e envia os demais para nuvem e manter um apontamento.
+
+### Armazenamento no Azure - Laboratório
+Compartilhamento de arquivos – protocolo SMB porta 445, observar que existem provedores que bloqueiam essa porta.
+Migrações para Azure – tem opção para criar projeto de migração de dados para o Azure (Discovery and Assessment)
+É possível simular para ver o custo, inclusive para grandes volumes de dados através do DataBox.
+
+Para testes do AzCopy:
+* Dentro do storage account – criar contêiner
+* Token de acesso compartilhado – criar com permissões para Ler, Adicionar, Criar, Gravar, Excluir, Lista e Armazenamento imutável.
+* Gerar Token SAS
+* Copiar conteúdo gerado no campo URL de SAS do blob
+
+Sintaxe do AzCopy, exemplo:  
+c:\azcopy\azcopy.exe copy "c:\seusdados" "<URL de SAS do blob" --recursive=true  
+Vai mostrar resumo no final, exemplo:  
+![image](https://github.com/user-attachments/assets/4e0b3227-4401-4bd0-8035-8fec4844cc39)
+
+ 
+
+Outra forma com sincronização de dados é através do:
+Gerenciador de Armazenamento do Microsoft Azure (storage-explorer)
+É possível baixar pelo site https://azure.microsoft.com/en-us/products/storage/storage-explorer
+Ferramenta gráfica que usa AzCopy por trás.
+
