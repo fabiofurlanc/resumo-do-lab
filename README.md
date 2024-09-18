@@ -59,4 +59,10 @@ Assinaturas herdam as condições aplicadas ao grupo de gerenciamento.
 Global Infrastructure | Microsoft Azure https://azure.microsoft.com/en-us/explore/global-infrastructure
 
 
+## Aula – Configurando Recursos e Dimensionamentos em Máquinas Virtuais na Azure
+### Laboratório - Máquinas virtuais:
+* Cada Zona = 1 datacenter.
+* Desconto Spot do Azure – Utilizar a carga de trabalho ociosa do Azure, pode desligar a máquina se o * Azure precisar da capacidade computacional, usar apenas em desenvolvimento.
+* Para desligar e ligar automaticamente – tem que fazer conta de serviço, pois por padrão só tem o desligar automaticamente.
+* Tipo de Host – Pessoal ou Em pool
 
