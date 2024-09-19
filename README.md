@@ -3,7 +3,9 @@ Resumo do lab Microsoft Azure
 
 # Módulo 1 - Conceitos Iniciais de Cloud com Azure
 
-## Aula Localizando Serviços por Categoria
+## Curso Benefícios da Computação em Nuvem
+
+### Aula Localizando Serviços por Categoria
 
 Nessa aula aprendemos:
 * Como mudar idioma do portal do Azure
@@ -17,10 +19,10 @@ Na Categoria - Rede
 
 * Quando constar como Versão Prévia (não é recomendado usar em base de produção)
 
-## Aula Criando máquinas Virtuais na Azure
+### Aula Criando máquinas Virtuais na Azure
 * SLA - existem diversos SLAs disponíveis conforme a redunância necessária, quando maior o SLA menor o tempo indisponível e mais caro o serviço
   
-## Aula Tipos de Serviço de Nuvem na Azure
+## Curso Tipos de Serviço de Nuvem na Azure
 * IaaS – Infraestrutura como serviço, mais flexível, mais responsabilidades do contratante.
 * PaaS – Plataforma como serviço, focado no desenvolvimento de apps, menos responsabilidades do contratante.
 * SaaS – Software como serviço, pouca flexibilidade, poucas responsabilidades do contratante.
@@ -32,7 +34,7 @@ Modelo de responsabilidade compartilhada:
 
 # Módulo 2 - Arquitetura e Serviços Azure
 
-## Aula Componentes de Arquitetura do Azure
+## Curso Componentes de Arquitetura do Azure
 * Regiões – compostas por um ou mais datacenters próximos
 Flexibilidade e escala para reduzir a latência.
 
@@ -59,14 +61,14 @@ Assinaturas herdam as condições aplicadas ao grupo de gerenciamento.
 Global Infrastructure | Microsoft Azure https://azure.microsoft.com/en-us/explore/global-infrastructure
 
 
-## Aula – Configurando Recursos e Dimensionamentos em Máquinas Virtuais na Azure
+### Aula – Configurando Recursos e Dimensionamentos em Máquinas Virtuais na Azure
 ### Laboratório - Máquinas virtuais:
 * Cada Zona = 1 datacenter.
 * Desconto Spot do Azure – Utilizar a carga de trabalho ociosa do Azure, pode desligar a máquina se o Azure precisar da capacidade computacional para cliente pagante preço normal, usar apenas em desenvolvimento.
 * Para desligar e ligar automaticamente – tem que fazer conta de serviço, pois por padrão só tem o desligar automaticamente.
 * Tipo de Host – Pessoal ou Em pool
 
-## Aulas - Armazenamento no Azure
+## Curso Armazenamento no Azure
 
 * Contas de armazenamento(storage acount)
 Nome exclusivo global
@@ -127,4 +129,64 @@ Outra forma com sincronização de dados é através do:
 Gerenciador de Armazenamento do Microsoft Azure (storage-explorer)
 É possível baixar pelo site https://azure.microsoft.com/en-us/products/storage/storage-explorer
 Ferramenta gráfica que usa AzCopy por trás.
+
+
+## Curso Identidade - Acesso - Segurança
+
+Serviços de diretórios – Entra ID, Entra Domain
+Métodos de autenticação – Logon único SSO, MFA, sem senha(exemplo Windows Hello).
+Modelos de segurança
+
+Identidades Externas e acesso a convidado.
+Acesso condicional do Entra – baseado em sinais.
+
+Controle de Acesso baseado em função (RBAC)
+
+Conceito de confiança zero.
+Modelo de defesa em profundidade.
+Microsoft Defender para nuvem.
+
+
+### Aula Microsoft Entra ID e Domain Services
+Serviço de gerenciamento de identidades e acesso baseado em nuvem do Azure.
+Semelhante ao antigo Active Directory.
+Domínio Gerenciado na nuvem – é possível replicar os novos usuários do AD Local para a Nuvem, mas usuários criados na nuvem não integram com AD Local, é possível integrar apenas alterações de senha.
+
+### Aula Autenticação e Autorização
+Autenticação – identifica a pessoa ou serviço buscando acesso a um recurso
+Autorização – Determina o nível de acesso de uma pessoa ou serviço autenticado.
+MFA – Autenticação multifator – algo que você sabe, algo que você possui e algo que você é.
+B2B – ID externa do Microsoft Entra, parceiros, fornecedores outros colaboradores.
+Azure AD B2C – Consumidores do seu aplicativo privado. Autenticação pelo ID do Facebook, Google por exemplo.
+
+### Aula Acesso Condicional
+Associação de usuário ou grupo
+Local do IP, Dispositivo, Aplicativo, Detecção de risco.
+
+Controle de acesso baseado em função - RBAC (rule base access control)
+Gerenciamento de acesso de granularidade fina.
+Definir tarefas dentro da equipe e permitir somente a quantidade necessária.
+Habilitar acesso ao portal do Azure e o controle de acesso aos recursos.
+Acesso herdável:
+	Assinatura
+		Grupo de recursos
+
+Ou seja, se tive acesso a Assinatura, terá acesso a tudo que está abaixo dela.
+
+Confiança Zero – Protege os ativos em qualquer lugar com uma política central, criar várias camadas de segurança.
+Ataques contra uma camada são isolados das camadas subsequentes.
+Defender para Cloud – aplicação cloud native, proteção contra ameaças nos datacenters Azure e locais. Analisa também AWS e GCP.
+Faz recomendações de segurança;
+Detectar e bloquear malware;
+Analisar e identificar ataques potenciais;
+Controle de acesso just-in-time para portas.
+
+
+### Aula Laboratório Identidade - Acesso - Segurança
+No Entra ID, depois de excluir um usuário, pode recuperar em até 30 dias.
+Entra Connect – sincronismo on-premise(local) com azure cloud
+Informar o domínio próprio da empresa em Custom domain names.
+Health(Preview) – SLA
+Access Control IAM – Permissões se dá por Grupo de Recursos ou direto no Recurso.
+Defender for cloud – Cloud Native, visão geral de segurança, recomendações, multi-cloud, híbrido. DevOps Security
 
