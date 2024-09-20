@@ -190,3 +190,52 @@ Health(Preview) – SLA
 Access Control IAM – Permissões se dá por Grupo de Recursos ou direto no Recurso.
 Defender for cloud – Cloud Native, visão geral de segurança, recomendações, multi-cloud, híbrido. DevOps Security
 
+
+# Módulo 3 Gerenciamento e Governança na Azure
+## Curso Gerenciamento de Custos na Azure
+### Aula Fatores que Afetam os Custos
+Gerenciamento de custos:
+Calculadora de custos e preços
+Gerenciamento de custos e marcas
+TCO (Custo total de propriedade)
+
+Fatores que afetam os custos:
+1.	Tipo de recurso – Máquina virtual, pasta compartilhada, banco de dados.
+2.	Consumo – conforme o modelo pode ser mais barato, exemplo pago conforme o uso(pay as you go) por horas tem um custo, com previsão de tempo de uso do recurso modalidade reserva por 3 meses tem outro custo.
+
+Aula Fatores que Afetam os Custos e Azure Marketplace
+3.	Manutenção - Monitorar seu volume no Azure e manter seu ambiente pode ajudá-lo a identificar e reduzir os custos não necessários, exemplos: como deligar máquinas virtuais subutilizadas, downgrade na máquina, etc.
+4.	Área geográfica – O mesmo tipo de recurso tem custos diferentes dependendo da área geográfica.
+5.	Tráfego de rede – Algumas transferências de dados são cobradas por volume e é afetado por zonas de cobrança.
+6.	Assinatura – O tipo e a configuração da assinatura, por exemplo a avaliação gratuita permite explorar alguns recursos.
+
+Marketplace – Permite que os clientes encontrem, experimentem, comprem e provisionem aplicativos e serviços de centenas de provedores de serviços, que são certificados para execução no Azure. Existem mais de 10.000 itens listados. Caso você use um recurso não nativo da Azure no caso de suporte não será com a Microsoft e sim com o Fornecedor/Desenvolvedor do recurso.
+
+
+### Aula Calculando o Custo Total no Azure
+
+Calculadora de preços – Faz estimativa de custos nem sempre será o valor exato que será cobrado quando criar o recurso de fato.
+Gera um relatório.
+
+Calculadora de custo total de propriedade (TCO) – Exemplo se a empresa quer ir para a nuvem, compara custos de infraestrutura local x nuvem, para estimular a economia de custos.
+
+Gerenciamento de Custos do Azure – Monitorar, definir orçamento de gastos, colocar alertas de custo, recomendações de custo, Budget.
+
+### Aula Marcas (Tags) no Azure
+
+Fornecem metadados aos recursos.
+Organizam os recursos em uma taxonomia de maneira lógica.  
+Consiste em um par nome-valor.  
+Úteis para reunir informações de cobrança.  
+Facilitar a identificação na fatura, ajuda a filtrar na fatura.  
+Não é obrigatório, se não informado o Azure adiciona um nome padrão.  
+Não é herdável.  
+Exemplos de marca:  
+1)Nome Centro de custo  
+    Valor Marketing  
+  
+2)Nome proprietário  
+    Valor João  
+
+### Aula Gerenciamento de Custos - Laboratório  
+Simulações com a mesma máquina, alterando licenciamento, tipo de uso, modelo reserva, vimos que o custo muda muito.
