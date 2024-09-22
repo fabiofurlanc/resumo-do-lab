@@ -239,3 +239,38 @@ Exemplos de marca:
 
 ### Aula Gerenciamento de Custos - Laboratório  
 Simulações com a mesma máquina, alterando licenciamento, tipo de uso, modelo reserva, vimos que o custo muda muito.
+
+
+## Curso Primeiros Passos com Governança e Conformidade na Azure
+### Aula Blueprints, Políticas e Bloqueios de Recurso
+Governança e conformidade:  
+Azure policy – Impõe padrões para a organização de conformidade de recursos, exemplo determinar regiões permitidas ou não permitidas, regra acima de qualquer pemissionamento, inclusive owner será abrangido, pode ser relacionada com grupos de recursos, assinaturas.
+Pode criar policy e deixar desativada.
+Estados(Status) da policy:
+* Non-compliant (não está dentro do compliance) - se tentar algo não permitido vai apresentar mensagem. Inclusive avalia recursos já criados antes da policy, portanto não permiti criar novos recursos mas os já existente funcionam mas ficam nesse estado.
+* Remediation (remediação) – Permite efetuar alguma alteração para permitir algo, por exemplo criar tag em recurso.
+* Compliant (Em compliance) – Significa que todos os recursos estão em conformidade com a policy do escopo aplicado.
+
+
+### Aula Gerenciando Bloqueios de Recursos
+Bloqueios de recurso – Permite por exemplo proteger um grupo de recursos de exclusão ou modificação acidental. Manter o estado do recurso, usar com cautela, por exemplo se existem scripts que criam e excluem recursos, pode ser usado em nível de assinatura, grupo de recursos e em recursos.  
+![image](https://github.com/user-attachments/assets/0f8f320f-20ee-43f0-bfb5-d855df540dc6)
+  
+ 
+Se atribuir bloqueio de recurso direto no recurso ao mover esse recurso para outro grupo de recursos o bloqueio também vai.
+
+Portal de confiança do serviço – Local onde a Microsoft publica as informações relacionadas a quais as estratégias a Microsoft segue por exemplo para proteção de dados, validação de conteúdos de IA, protocolos e leis relativos a informações de seus clientes, portanto pode ser utilizado inclusive para auditorias.
+https://servicetrust.microsoft.com
+
+Microsoft Purview – Família de soluções de governança, risco e conformidade. Exemplo identificar em um banco de dados, quem tem acesso a uma tabela, campos, quem pode alterar. Reúne insights sobre seus dados locais, multinuvem e de software como serviço.
+Descoberta de dados  
+Classificação dos dados  
+Linhagem de ponta a ponta (Ciclo de vida dos dados) 
+
+
+### Aula Gerenciando Políticas em Acessos Azure - Laboratório  
+Foi testado bloqueio de recursos.  
+Foi demonstrado Microsoft Purview – Inclusive tem ferramentas adicionais como Microsoft Priva que pode ser usado por exemplo para LGPD. Ferramentas de auditoria. Ajuda a identificar pontos de segurança e compliance.  
+Policy – Habilitada/Desabilitada.  
+
+
