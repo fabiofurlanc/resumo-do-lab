@@ -291,4 +291,24 @@ Azure Bicep – Linguagem nativa Microsoft, comandos não aceitos para outras nu
 Para entrar no Azure Shell tem que ter storage account na assinatura.
 
 
+## Curso Ferramentas de Monitoramento do Azure  
+### Aula Ferramentas de Monitoramento do Azure
+
+Assistente do Azure – Cloud Native analisa recursos implantados e faz recomendações para otimizar implantações do Azure, principais pontos analisados:    
+	Confiabilidade  
+	Segurança  
+	Desempenho
+	Custo  
+	Excelência Operacional
+
+Integridade do Serviço do Azure – Possibilidade de degradação status de serviços que podem afetar você, exibição focada nos serviços e regiões que você está usando.  
+	Resource Helth – exibição personalizada dos recursos reais do Azure. Fornece informações sobre a integridade de seus serviços em nuvem individuais.  
+
+Azure Monitor – Maximiza a disponibilidade e desempenho de aplicativos e serviços coletando, analisando e tomando decisões com base na telemetria da nuvem e de ambientes locais.  Azure Log Analytics, Alertas e Application Insights.
+
+
+### Aula Ferramentas de Monitoramento do Azure – Laboratório
+Advisor – Centro de recomendações e insights.
+
+
 
