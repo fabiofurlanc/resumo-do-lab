@@ -267,10 +267,28 @@ Descoberta de dados
 Classificação dos dados  
 Linhagem de ponta a ponta (Ciclo de vida dos dados) 
 
-
 ### Aula Gerenciando Políticas em Acessos Azure - Laboratório  
 Foi testado bloqueio de recursos.  
 Foi demonstrado Microsoft Purview – Inclusive tem ferramentas adicionais como Microsoft Priva que pode ser usado por exemplo para LGPD. Ferramentas de auditoria. Ajuda a identificar pontos de segurança e compliance.  
 Policy – Habilitada/Desabilitada.  
+
+
+## Curso Ferramentas de Gerenciamento e Implantação Azure
+### Aula Ferramentas de Gerenciamento e Implantação
+Portal do Azure  
+Azure Cloud Shell / Azure PowerShell - Usa comandos do PowerShell.
+CLI (Interface de linha de comando) - Usa comandos Bash.
+Azure Arc - Multicloud, permite fazer gestão de máquinas on-premise e que estão hospedadas em outro cloud AWS(Amazon), GCP(Google), permite criar, atualizar e excluir recursos na assinatura do Azure.
+ARM (Azure Resource Manager) Template - Camada de gerenciamento.
+
+Infraestrutura como código – Consistência na implantação, configuração em escala.  Provisionar rapidamente ambientes com base em configuração.
+
+Modelos de ARM – são arquivos JSON(Javascript Object Notation) que podem usados para criar e implantar a infraestrutura no Azure sem a necessidade de escrever comandos de programação.  
+
+Azure Bicep – Linguagem nativa Microsoft, comandos não aceitos para outras nuvens.
+
+### Aula Ferramentas de Implantação na Azure - Laboratório
+Para entrar no Azure Shell tem que ter storage account na assinatura.
+
 
 
